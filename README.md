@@ -2,12 +2,6 @@ GCM Flask Server
 ========================
 
 
-
-![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_0.jpg "How the app looks 1")
-
-
-![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_1.jpg "Send a message")
-
 Integration of https://github.com/geeknam/python-gcm into flask
 
 Features:
@@ -15,6 +9,12 @@ Features:
 - Admin panel with user managment
 - REST API for easy posting from your android app
 - Sending messages to all or only to specific categories
+
+
+![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_0.jpg "How the app looks 1")
+
+
+![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_1.jpg "Send a message")
 
 
 #### How to use it:
