@@ -22,7 +22,7 @@ def grouper(n, iterable, padvalue=None):
 
 
 def send_push_notification_with_payload(category, payload):
-    gcm = GCM("AIzaSyDejSxmynqJzzBdyrCS-IqMhp0BxiGWL1M")
+    gcm = GCM("YOUR_API_KEY_HERE")
     data = {'data': payload, 'param2': 'value2'}
 
     if category != "all":
