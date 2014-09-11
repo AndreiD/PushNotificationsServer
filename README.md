@@ -2,12 +2,6 @@ GCM Flask Server
 ========================
 
 
-
-![alt text](https://github.com/AndreiD/Flask-Easy-Template/blob/master/app/static/img/pic_0.jpg "How the app looks 1")
-
-
-![alt text](https://github.com/AndreiD/Flask-Easy-Template/blob/master/app/static/img/pic_1.jpg "Send a message")
-
 Integration of https://github.com/geeknam/python-gcm into flask
 
 Features:
@@ -17,13 +11,21 @@ Features:
 - Sending messages to all or only to specific categories
 
 
+![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_0.jpg "How the app looks 1")
+
+
+![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_1.jpg "Send a message")
+
+
 #### How to use it:
 
-- `git clone https://github.com/AndreiD/Flask-Easy-Template.git <project_name>` or download the zip
+- `git clone https://github.com/AndreiD/PushNotificationsServer.git <project_name>` or download the zip
 - `pip install -r requirements.txt`
 - edit the `config.py` with your settings!
 - in **run.py** edit the port of the app (Default: 1337)
 - `python run.py` -> http://server_ip:1337
+- play with it
+- modify the API KEY and admin user/password (TODO: move them to config)
 
 
 #### Attention:
@@ -51,5 +53,4 @@ an example with PAGINATION
 
 - a supervisord.conf [supervisor is used to monitor the web application and restart it, also starts the app in case you restart your server]
 - a simple nginx.conf
-
 

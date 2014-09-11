@@ -35,6 +35,7 @@ def send_push_notification_with_payload(category, payload):
         print "------- processing new chunk -----"
         reg_ids = [user.reg_id for user in chunk_Users if user != 'x']
 
+
         response = gcm.json_request(registration_ids=reg_ids, data=data, delay_while_idle=True)
 
         # Handling errors
