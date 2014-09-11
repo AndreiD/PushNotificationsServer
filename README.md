@@ -19,7 +19,7 @@ Features:
 
 #### How to use it:
 
-- `git clone https://github.com/AndreiD/Flask-Easy-Template.git <project_name>` or download the zip
+- `git clone https://github.com/AndreiD/PushNotificationsServer.git <project_name>` or download the zip
 - `pip install -r requirements.txt`
 - edit the `config.py` with your settings!
 - in **run.py** edit the port of the app (Default: 1337)
