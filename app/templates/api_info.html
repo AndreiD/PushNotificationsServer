@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+<h3>Flask-Restless provides simple generation of ReSTful APIs for database models defined using SQLAlchemy (or Flask-SQLAlchemy). The generated APIs send and receive messages in JSON format.</h3>
+<h3>Allowed only POST (the deletion is managed automatically from the gcm response (or manually from the admin panel)</h3>
+<h3>Api info here: <a href="https://flask-restless.readthedocs.org/en/latest/requestformat.html">Format of requests and responses</a></h3>
+
+        <hr>
+        <h4>Test example:</h4>
+        <br/>
+
+<pre style='color:#000000;background:#ffffff;'>
+<span style='color:#3f7f59; '>#!/usr/bin/python</span>
+<span style='color:#3f7f59; '>#-*- coding: utf-8 -*-</span>
+<span style='color:#7f0055; font-weight:bold; '>import</span> requests
+<span style='color:#7f0055; font-weight:bold; '>import</span> json
+
+new_android_user = {<span style='color:#2a00ff; '>'id'</span>: <span style='color:#2a00ff; '>'1337'</span>, <span style='color:#2a00ff; '>'reg_id'</span>: <span style='color:#2a00ff; '>'1234'</span>, <span style='color:#2a00ff; '>'category'</span>: <span style='color:#2a00ff; '>'simpleuser'</span>, <span style='color:#2a00ff; '>'extra_info'</span>: <span style='color:#2a00ff; '>'android 5.0 samsung galaxy s6 etc.'</span>}
+r = requests.post(<span style='color:#2a00ff; '>'http://xxxxxxxxx/api/v1/androidusers'</span>, data=json.dumps(new_android_user), headers={<span style='color:#2a00ff; '>'content-type'</span>: <span style='color:#2a00ff; '>'application/json'</span>, <span style='color:#2a00ff; '>'Authorization'</span>: <span style='color:#2a00ff; '>'mysecretauthkey'</span>})
+
+<span style='color:#7f0055; font-weight:bold; '>if</span> r.status_code != 201:
+    <span style='color:#7f0055; font-weight:bold; '>print</span>(<span style='color:#2a00ff; '>"API POST FAILED >> status code: "</span> + str(r.status_code))
+<span style='color:#7f0055; font-weight:bold; '>else</span>:
+    <span style='color:#7f0055; font-weight:bold; '>print</span>(<span style='color:#2a00ff; '>"POST ... ok"</span>)
+</pre>
+
+
+
+{% endblock content %}
