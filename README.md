@@ -28,6 +28,13 @@ Features:
 - modify the API KEY and admin user/password (TODO: move them to config)
 
 
+#### The android client
+
+- Option 1: step by step follow the official tutorials
+- Option 2: https://github.com/AndreiD/PushNotificationsApp 
+
+
+
 #### Attention:
 
 About security: at the moment the api is protected only by a secret key. Use ProGuard in your android app, SSL, other auth methods, etc etc
