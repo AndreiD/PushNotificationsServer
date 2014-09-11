@@ -3,10 +3,10 @@ GCM Flask Server
 
 
 
-![alt text](https://github.com/AndreiD/Flask-Easy-Template/blob/master/app/static/img/pic_0.jpg "How the app looks 1")
+![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_0.jpg "How the app looks 1")
 
 
-![alt text](https://github.com/AndreiD/Flask-Easy-Template/blob/master/app/static/img/pic_1.jpg "Send a message")
+![alt text](https://github.com/AndreiD/PushNotificationsServer/blob/master/app/static/img/pic_1.jpg "Send a message")
 
 Integration of https://github.com/geeknam/python-gcm into flask
 
@@ -24,6 +24,8 @@ Features:
 - edit the `config.py` with your settings!
 - in **run.py** edit the port of the app (Default: 1337)
 - `python run.py` -> http://server_ip:1337
+- play with it
+- modify the API KEY and admin user/password (TODO: move them to config)
 
 
 #### Attention:
