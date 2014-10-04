@@ -44,11 +44,15 @@ In order to test the notifications, we need to link the app to the google api pr
 Note that the sources are not updates, so you'll have to modify the gradle 
 
 ***gcm-client/ GcmClient/ build.gradle***
-~~~~compile "com.google.android.gms:play-services:4.0.+"~~~~
+~~~~
+compile "com.google.android.gms:play-services:4.0.+"
+~~~~
 
 to 
 
-~~~~compile "com.google.android.gms:play-services:5.0.89+"~~~~ 
+~~~~
+compile "com.google.android.gms:play-services:5.0.89+"
+~~~~ 
 
 
 In the main activity replace 
@@ -90,12 +94,17 @@ The client will communicate with your server by sending the registration ID of t
 
 The following steps are done on a clean Ubuntu 14 droplet.
 
-~~~~ sudo apt-get install python-pip python-dev build-essential ~~~~
+~~~~ 
+sudo apt-get install python-pip python-dev build-essential 
+~~~~
 
 Find out more about python-gcm here https://github.com/geeknam/python-gcm
 
 
-~~~~ pip install python-gcm ~~~~
+~~~~ 
+pip install python-gcm 
+~~~~
+
 
 Create a new python file somewhere on the server. Let's say **/home/test_push.py**
 
@@ -113,20 +122,27 @@ gcm.plaintext_request(registration_id=reg_id, data=data)
 
 ### Explanation:
 
-~~~~ from gcm import * ~~~~
+~~~~ 
+from gcm import *
+~~~~
 We import the Python client for Google Cloud Messaging for Android
 
-~~~~ gcm = GCM("AIzaSyDejSxmyXqJzzBdyrCS-IqMhp0BxiGWXAA") ~~~~ 
+~~~~ 
+gcm = GCM("AIzaSyDejSxmyXqJzzBdyrCS-IqMhp0BxiGWXAA")
+~~~~ 
 This is our key from the GCM. Enter your project https://console.developers.google.com. The key is under API & Auth - Credentials. Make sure at the allowed server ip is your DO droplet ip (you can find it with the command ifconfig).
 
-~~~~ reg_id = 'APA91bHDRCRNIGHpOfxivgwQt6ZFK3isuW4aTUOFwMI9qJ6MGDpC3MlOWHtEoe8k6PAKo0H_g2gXhETDO1dDKKxgP5LGulZQxTeNZSwva7tsIL3pvfNksgl0wu1xGbHyQxp2CexeZDKEzvugwyB5hywqvT1-UxxxqpL4EUXTWOm0RXE5CrpMk' 
+~~~~ 
+reg_id = 'APA91bHDRCRNIGHpOfxivgwQt6ZFK3isuW4aTUOFwMI9qJ6MGDpC3MlOWHtEoe8k6PAKo0H_g2gXhETDO1dDKKxgP5LGulZQxTeNZSwva7tsIL3pvfNksgl0wu1xGbHyQxp2CexeZDKEzvugwyB5hywqvT1-UxxxqpL4EUXTWOm0RXE5CrpMk' 
 ~~~~
 
 Now when you run your test app, CGM will give you a reg id. It will appear in your logcat like this
 
+~~~~
 =======================================
 10-04 17:21:07.102    7550-7550/com.pushnotificationsapp.app E/==========================﹕ APA91bHDRCRNIGHpOfxivgwQt6ZFK3isuW4aTUOFwMI9qJ6MGDpC3MlOWHtEoe8k6PAKo0H_g2gXhETDO1dDKKxgP5LGulZQxTeNZSwva7tsIL3pvfNksgl0wu1xGbHyQxp2CexeZDKEzvugwyB5hywqvT1-UJY0KNqpL4EUXTWOm0RxccxpMk
 10-04 17:21:07.102    7550-7550/com.pushnotificationsapp.app E/==========================﹕ =======================================
+~~~~
 
 This is the reg_id of your device. 
 
