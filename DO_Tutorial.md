@@ -164,7 +164,7 @@ In case no notification appeared on your device after ~ 10 seconds. Follow this 
 
 Still nothing appears ? It's probably the app. Check the logcat for some errors. 
 
-[PushNotificationExample](http://i.imgur.com/GxRGsQ4.png)
+![push notification example]((http://i.imgur.com/GxRGsQ4.png)
 
 ## Where to go from here
 
