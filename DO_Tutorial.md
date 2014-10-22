@@ -34,7 +34,12 @@ We need to create a google api project in order to enable GCM for our app
 - Supply your server's IP address. If you want to open it to all put 0.0.0.0/0.
 - Click Create and **copy the key**. You'll need in the server that we'll write
 
-## Setup a test android app
+## (OPTION 1) 
+   Install an app that will just tell you your device reg. id. 
+   Or you can install it manually, directly from an apk. (Make sure you allow unsigned apps, check security -> allow untrusted apps) from here https://github.com/AndreiD/PushNotificationsApp/blob/master/PushNotificationsApp/PushNotificationsApp-PushNotificationsApp.apk
+   
+
+## (OPTION 2) Setup a test android app
 
 In order to test the notifications, we need to link the app to the google api project that we made. If you are familiar with android apps then skip this step.
 
