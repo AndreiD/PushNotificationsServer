@@ -36,7 +36,7 @@ We need to create a google api project in order to enable GCM for our app
 
 ## Step 3 - (OPTION 1) 
    
-   Install from google play a test app that will just tell you your device reg. id. [[[ link will be here ]]]
+   Install from google play a test app that will just tell you your device reg. id. [download from google play](http://play.google.com/store/apps/details?id=com.pushnotificationsapp.app)
    Or you can install it manually, directly from an apk. (Make sure you allow unsigned apps, check security -> allow untrusted apps) from here https://github.com/AndreiD/PushNotificationsApp/blob/master/PushNotificationsApp/PushNotificationsApp-PushNotificationsApp.apk
    
 
