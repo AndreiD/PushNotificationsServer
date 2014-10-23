@@ -14,7 +14,7 @@ Google-provided GCM Connection Servers take messages from a 3rd-party applicatio
 
 In other words, you need a server to communicate with google's server in order to send the notifications. Your server send messages to a GCM (Google Cloud Messaging) connection server, then the connection server enqueues and stores the message, and then sends it to the device when the device is online.
 
-## The Google API Project
+## Step 1 -The Google API Project
 
 We need to create a google api project in order to enable GCM for our app
 
@@ -24,7 +24,7 @@ We need to create a google api project in order to enable GCM for our app
 - Once the project has been created, a page appears that displays your project ID and project number. 
 - **Copy the project number**. You'll use it in your android app client
 
-## Enable GCM in your project
+## Step 2 - Enable GCM in your project
 
 - In the sidebar on the left, select APIs & auth.
 - In the displayed list of APIs, turn the Google Cloud Messaging for Android toggle to ON.
@@ -34,12 +34,13 @@ We need to create a google api project in order to enable GCM for our app
 - Supply your server's IP address. If you want to open it to all put 0.0.0.0/0.
 - Click Create and **copy the key**. You'll need in the server that we'll write
 
-## (OPTION 1) 
-   Install an app that will just tell you your device reg. id. 
+## Step 3 - (OPTION 1) 
+   
+   Install from google play a test app that will just tell you your device reg. id. [[[ link will be here ]]]
    Or you can install it manually, directly from an apk. (Make sure you allow unsigned apps, check security -> allow untrusted apps) from here https://github.com/AndreiD/PushNotificationsApp/blob/master/PushNotificationsApp/PushNotificationsApp-PushNotificationsApp.apk
    
 
-## (OPTION 2) Setup a test android app
+## Step 3 - (OPTION 2) Setup a test android app
 
 In order to test the notifications, we need to link the app to the google api project that we made. If you are familiar with android apps then skip this step.
 
@@ -79,7 +80,7 @@ Each time a device registers to GCM it receives a registration ID. We will need 
 after you run the app, look in the logcat and copy-paste the regid somwhere in a text file.
 
 
-## The 3rd Party Server Setup
+## Step 4 -The 3rd Party Server Quick Intro
 
 Google-provided GCM Connection Servers take messages from a 3rd-party application server and send them to a GCM-enabled Android application (the "client app") running on a device. For example, Google provides connection servers for HTTP and CCS (XMPP).
 
@@ -95,7 +96,7 @@ Roles of the server we make
 
 The client will communicate with your server by sending the registration ID of the device for you to store it and use it when you send the notification. Don't worry now about managing it, it's very simple and GCM provides you with help by giving you error messages in case a registration ID is invalid.
 
-## Python GCM Simple Server
+## Step 5 - Setup Python GCM Simple Server
 
 The following steps are done on a clean Ubuntu 14 droplet.
 
