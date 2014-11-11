@@ -113,7 +113,7 @@ Find out more about python-gcm here https://github.com/geeknam/python-gcm
 
 Create a new python file somewhere on the server. Let's say **/home/test_push.py**
 
-**/home/test_push.py**
+**nano /home/test_push.py**
 ~~~~
 from gcm import *
 
