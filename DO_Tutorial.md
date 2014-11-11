@@ -112,8 +112,12 @@ pip install python-gcm
 Find out more about python-gcm here https://github.com/geeknam/python-gcm
 
 Create a new python file somewhere on the server. Let's say **/home/test_push.py**
+~~~~
+nano /home/test_push.py**
+~~~~
 
-**nano /home/test_push.py**
+copy paste the below code
+
 ~~~~
 from gcm import *
 
